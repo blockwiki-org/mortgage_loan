@@ -1,0 +1,7 @@
+Function confirmTransfer (tx) 
+{
+if(state[tx.data.number]==tx.signer){
+State[tx.data.number]=tx.data.receiver;
+} 
+else throw;
+}
